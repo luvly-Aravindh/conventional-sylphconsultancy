@@ -1,0 +1,6 @@
+# Netlify redirects for the Sylph Developers site
+# Short link to the free guide, for emails and WhatsApp: sylph-developers.netlify.app/guide
+/guide    /guide/Sylph_Before_the_Site_Visit.pdf    302
+# Older links (and earlier guide PDFs) used /check: send them to the form
+/check      /eligibility/          301
+/check/*    /eligibility/:splat    301
