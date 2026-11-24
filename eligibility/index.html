@@ -152,7 +152,7 @@
   /* Plate: the right page */
   .plate-page { background: var(--ink); padding: 0; display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; overflow: hidden; }
   .plate { flex: 1; position: relative; overflow: hidden; background: var(--ink); }
-  .plate > * { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: opacity .6s var(--ease); }
+  .plate > * { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transition: opacity .6s var(--ease); }
   .plate svg { display: block; }
   .plate > img { object-position: center 28%; background: var(--ink); }
   .caption { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 170px clamp(28px, 4vw, 56px) 34px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; color: var(--paper); background: linear-gradient(to top, rgba(0,0,0,.94) 0%, rgba(0,0,0,.82) 38%, rgba(0,0,0,.4) 70%, rgba(0,0,0,0)); pointer-events: none; }
@@ -315,7 +315,7 @@ const CONFIG = {
     covers:     ['covers/signature-global', 'people/sg-chairman', 'homes/sg-titanium-page', 'homes/sg-deluxe-page', 'homes/sg-daxin-page', 'homes/sg-titanium', 'table/stack', 'table/books', 'table/nirman', 'table/design-epicenter'],
     architects: [],
     brands: [],
-    developers: ['covers/signature-global', 'homes/sg-titanium', 'homes/cascade-house', 'people/varun-garg', 'homes/maya-garden', 'people/inventarchitects', 'homes/inventarchitects', 'homes/design-unit-villa', 'people/design-unit', 'homes/design-unit-white']
+    developers: ['flow/1', 'flow/2', 'flow/3', 'flow/4', 'flow/5', 'flow/6', 'flow/7', 'flow/8', 'flow/9', 'flow/10']
   },
   // Clean photographs (no magazine text) used for the buyer's own cover or feature preview at the end.
   hero: {
@@ -389,7 +389,7 @@ Object.keys(PACKAGES).forEach(k => { PACKAGES[k].key = k; });
    ============================================================ */
 const FACTS = {
   intro: '7,000+ brands featured since 2021.',
-  contact: '60,000 to 70,000 copies a year, hand-delivered to UHNI and HNI homes.',
+  contact: '75,000+ print copies a year, hand-delivered to UHNI and HNI homes.',
   type: 'Sylph features the people who design, build and furnish India’s finest homes.',
   architect: 'Read in the homes of the clients you want to work with next.',
   brand: 'Seen by UHNI and HNI homeowners, and by the architects who choose what goes into their homes.',
